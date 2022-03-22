@@ -417,12 +417,13 @@ background-repeat: no-repeat;
 
 
 
+
 @media (max-width: 576px) {
     .main-logo{
         z-index:0;
         
-        max-width:100%;
-        max-height:100%;
+        max-width:60%;
+        max-height:60%;
 
         background-attachment: fixed;
         background-position: center;
@@ -433,7 +434,7 @@ background-repeat: no-repeat;
 
         background: url("img/logo-small.png");
         background-repeat: no-repeat;
-        bottom:60px
+        bottom:40px
     }
 
     .section-news {
@@ -446,13 +447,14 @@ background-repeat: no-repeat;
         background-color: #181b22;
     }
 
-    .section-about p {
-        font-size: 0.8em;
+    .section-about li {
+        font-size: small;
+        text-align: center;
         color: rgb(180, 178, 178);
     }
     
     .section-about h2 {
-        font-size: 1.2em;
+        font-size: 1.0em;
     }
 
     .section-about a {
@@ -470,32 +472,16 @@ background-repeat: no-repeat;
 }
  
 
-@media (max-width: 991px) {
-    .main-logo{
-        z-index:0;
-        
-        max-width:100%;
-        max-height:100%;
-
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        text-align: center;
-
-        background: url("img/logo-small.png");
-        background-repeat: no-repeat;
-    
-    }
-}
 
 @media (max-width: 768px) {
     .main-logo{
         z-index:0;
-        
-        max-width:100%;
-        max-height:100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width:80%;
+        max-height:80%;
 
         background-attachment: fixed;
         background-position: center;
@@ -506,7 +492,7 @@ background-repeat: no-repeat;
 
         background: url("img/logo-small.png");
         background-repeat: no-repeat;
-      
+        bottom:40px
     }
 
     .section-news {
@@ -518,16 +504,43 @@ background-repeat: no-repeat;
         padding:60px;
         background-color: #181b22;
     }
+    
+    .section-about li {
+        font-size: smaller;
+        color: rgb(180, 178, 178);
+        text-align: center;
+    }
+
+    .section-about h2 {
+        font-size: 1em;
+        color: rgb(236, 236, 236);
+    }
 
 
-.section-about p {
-    font-size: 0.8em;
-    color: rgb(180, 178, 178);
-}
-
-.section-about h2 {
-    font-size: 1em;
-    color: rgb(236, 236, 236);
-}
  }
   
+
+@media (max-width: 991px) {
+    .main-logo{
+        z-index:0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+        max-width:100%;
+        max-height:100%;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+
+        background: url("img/logo-small.png");
+        background-repeat: no-repeat;
+
+        bottom:40px
+    
+    }
+}
