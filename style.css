@@ -165,7 +165,7 @@ section {
 }
 
 .section-listen a {
-
+    text-decoration: none;
     color: rgb(209, 207, 207);
 }
 
@@ -186,12 +186,12 @@ float: right;
 }
 
 .section-about p {
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: rgb(180, 178, 178);
 }
 
 .section-about h2 {
-    font-size: 3em;
+    font-size: 2em;
     color: rgb(236, 236, 236);
 }
 
@@ -416,27 +416,24 @@ background-repeat: no-repeat;
 
 
 
-@media only screen and (max-device-width: 1366px) {
-
-    .parallax-picture2 {
-    
-        background-attachment: scroll;
-        
-        }
-}
 
 @media (max-width: 576px) {
     .main-logo{
         z-index:0;
-        position:absolute;
+        
         max-width:100%;
         max-height:100%;
-        background: url("img/main-logo.png");
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+
+        background: url("img/logo-small.png");
         background-repeat: no-repeat;
         bottom:60px
-
-       
-
     }
 
     .section-news {
@@ -448,16 +445,89 @@ background-repeat: no-repeat;
         padding:50px;
         background-color: #181b22;
     }
-}
- /* 
-@media (min-width: 768px) {
-   
- }
-  
-@media (min-width: 992px) {
-   
- }
-  
-@media (min-width: 1200px) {
+
+    .section-about p {
+        font-size: 0.8em;
+        color: rgb(180, 178, 178);
+    }
     
- }*/
+    .section-about h2 {
+        font-size: 1.2em;
+    }
+
+    .section-about a {
+        font-size: medium
+        
+    }
+
+    .apple {
+        width: 200px;
+    }
+
+    .spotify {
+        width: 200px;
+    }
+}
+ 
+
+@media (max-width: 991px) {
+    .main-logo{
+        z-index:0;
+        
+        max-width:100%;
+        max-height:100%;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+
+        background: url("img/logo-small.png");
+        background-repeat: no-repeat;
+    
+    }
+}
+
+@media (max-width: 768px) {
+    .main-logo{
+        z-index:0;
+        
+        max-width:100%;
+        max-height:100%;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+
+        background: url("img/logo-small.png");
+        background-repeat: no-repeat;
+      
+    }
+
+    .section-news {
+        padding:30px;
+        background-color: #242424;
+    }
+
+    .section-listen {
+        padding:60px;
+        background-color: #181b22;
+    }
+
+
+.section-about p {
+    font-size: 0.8em;
+    color: rgb(180, 178, 178);
+}
+
+.section-about h2 {
+    font-size: 1em;
+    color: rgb(236, 236, 236);
+}
+ }
+  
