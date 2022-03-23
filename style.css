@@ -11,10 +11,22 @@
 
 
 .navbar {
-    background: url("img/sky.png");
+    background:transparent;
+
+}
+.navbar-inner {
+    background:transparent;
+    
 }
 
-.navbar.transparent.navbar-inverse .navbar-inner {
+
+
+.navbar-trans {
+    background: transparent; 
+}
+  
+
+.navbar.transparent.navbar-inverse  {
     border-width: 0px;
     -webkit-box-shadow: 0px 0px;
     box-shadow: 0px 0px;
@@ -23,21 +35,41 @@
     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     background-image: linear-gradient(180deg,rgba(245, 244, 244, 0.651) 0%,rgba(0,0,0,0.00) 100%);
 }
+.navbar a {
+    float:right;
+}
 
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  
 .text-logo-image{
     width: 420%;
     height: 220%;
-    margin-left: -150px;
+  
     overflow: hidden;
     margin-top: -20px;
+    position:absolute;
+    bottom: 5px;
+    left: 50%;
+    bottom:100px;
+    width: 300px;
+    height:100px;
+    background: url("img/BMText.png");
+    background-repeat: no-repeat;
+
 }
 
+
+
 .main-logo{
-    z-index:0;
+    z-index:999;
     position:absolute;
-    bottom: 40px;
-    left: 100;
-    width: 100%;
+    bottom:-10px;
+    left: 100px;
+    width: 200px;
     height:100%;
     background: url("img/main-logo.png");
     background-repeat: no-repeat;
@@ -57,25 +89,25 @@
 }
 
 .wave#wave1 {
-    z-index:1000;
+    z-index:998;
     opacity:1;
     background-position-x: 400px;
 }
 
 .wave#wave2 {
-    z-index:999;
+    z-index:997;
     opacity:.5;
     background-position-x: 300px;
 }
 
 .wave#wave3 {
-    z-index:998;
+    z-index:996;
     opacity:.1;
     background-position-x: 200px;
 }
 
 .wave#wave4 {
-    z-index:999;
+    z-index:995;
     opacity:1;
     background-position-x: 100px;
 }
@@ -423,7 +455,7 @@ background-repeat: no-repeat;
         z-index:0;
         
         max-width:60%;
-        max-height:60%;
+        max-height:100%;
 
         background-attachment: fixed;
         background-position: center;
@@ -475,24 +507,20 @@ background-repeat: no-repeat;
 
 @media (max-width: 768px) {
     .main-logo{
-        z-index:0;
+        z-index:999;
         display: block;
         margin-left: auto;
         margin-right: auto;
-
         max-width:80%;
-        max-height:80%;
-
+        max-height:100%;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
         text-align: center;
-
         background: url("img/logo-small.png");
         background-repeat: no-repeat;
-        bottom:40px
+        bottom:10px
     }
 
     .section-news {
@@ -522,7 +550,7 @@ background-repeat: no-repeat;
 
 @media (max-width: 991px) {
     .main-logo{
-        z-index:0;
+        z-index:999;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -534,13 +562,25 @@ background-repeat: no-repeat;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
         text-align: center;
-
         background: url("img/logo-small.png");
         background-repeat: no-repeat;
+        width: 300px;
+        bottom:-5px;
+    
+    }
 
-        bottom:40px
+    .text-logo-image{
+        width: 0%;
+        height: 0%;
+      
+        overflow: hidden;
+        margin-top: -20px;
+        position:absolute;
+        bottom: 0;
+        left: 50%;
+        background: url();
+        background-repeat: no-repeat;
     
     }
 }
