@@ -475,6 +475,14 @@ background-repeat: no-repeat;
         text-align: center;
         color: rgb(180, 178, 178);
     }
+
+
+    .section-about {
+
+        
+        padding:20px;
+        padding-top:60px;
+    }
     
     .section-about h2 {
         font-size: 1.0em;
@@ -520,7 +528,7 @@ background-repeat: no-repeat;
     }
 
     .section-listen {
-        padding:60px;
+        padding:40px;
         background-color: #181b22;
     }
     
