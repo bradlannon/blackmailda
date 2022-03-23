@@ -11,6 +11,7 @@
 
 
 .navbar {
+    z-index:999;
     background:transparent;
 
 }
@@ -43,7 +44,6 @@
 html {
     scroll-behavior: smooth;
   }
-
   
 .text-logo-image{
     width: 420%;
@@ -452,22 +452,13 @@ background-repeat: no-repeat;
 
 @media (max-width: 576px) {
     .main-logo{
-        z-index:0;
-        
-        max-width:60%;
-        max-height:100%;
-
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        text-align: center;
 
         background: url("img/logo-small.png");
         background-repeat: no-repeat;
-        bottom:40px
+   left: -5px;
+   
     }
+
 
     .section-news {
         padding:10px;
